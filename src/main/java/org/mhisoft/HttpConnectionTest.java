@@ -19,12 +19,12 @@ public class HttpConnectionTest {
 //      System.setProperty("https.proxyPort", "8080");
 			System.out.println(">>>>>>>>>> args[0]:" + args[0]);
 			System.out.println(System.getProperties());
-			System.out.println(">>>>>>>>>> start to make connectoins.");
+			System.out.println(">>>>>>>>>> start to make the connection.");
 			URL url = new URL(args[0]);
 			URLConnection yc = url.openConnection();
 			BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
 
-			System.out.println(">>>>>>>>>> rersponse:");
+			System.out.println(">>>>>>>>>> response:");
 			String inputLine;
 			while ((inputLine = in.readLine()) != null) {
 				System.out.println(inputLine);
